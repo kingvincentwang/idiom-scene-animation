@@ -63,7 +63,7 @@ def render(im, m, o):
         mask = Image.new("L", c.size, 0)
         ImageDraw.Draw(mask).polygon(pts, fill=255)
         c.paste(lay, (0, 0), mask)
-        ImageDraw.Draw(c).line(pts, fill=(36, 18, 14), width=max(2, int(S * .9)))
+        ImageDraw.Draw(c).line(pts, fill=(180, 87, 78), width=max(2, int(S * .6)))
     return c.resize((240, int(240 * c.height / c.width)))
 
 
